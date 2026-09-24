@@ -5,10 +5,10 @@ n = int(input())
 count = 0
 
 # 3중 반복문
-for h in range(n + 1):
+for h in range(n + 1):  # n 번 반복
     for m in range(60):
         for s in range(60):
-            if '3' in str(h) + str(m) + str(s):
+            if '3' in (str(h) + str(m) + str(s)):  # hhmmss 에 '3' 이 있는가?
                 count += 1
 
 
